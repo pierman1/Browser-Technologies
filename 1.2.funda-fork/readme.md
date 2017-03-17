@@ -1,22 +1,30 @@
 # Opdracht 1.2 Fork je Funda
 
 Hieronder staat een lijst met mogelijke verbeteringen kwa performance en accesibility.
-Gedacht vanuit de Progressive Enhancement strategie.
+Gedacht vanuit de Progressive Enhancement strategie
+
+## Table of contents
+- [Verbeteringen](#verbeteringen)
+- [Afbeeldingen](#afbeeldingen)
+- [Javascript](#javascript)
+- [Broadband internet](#broadband)
+- [Kleur](#kleur)
+- [Mouse/Trackpad](#mouse)
+- [Verbeter punten](#verbeter)
 
 ![alt tag](readme_imgs/first-state.png)
 
-## Verbeteringen
+## <a name="verbeteringen"></a> Verbeteringen
 
 In het vak Browser Technologies moeten we na denken over Progressive
 
 *Bevindingen:*
 
-- Door blokerende Javascript wordt er een hele tijd niet getoond.
+- Door blokerende Javascript wordt er een hele tijd niks getoond.
 
-- De afbeeldingen zijn nogal zwaar. Ook als ze opgeslagen worden in favorieten.
+- De afbeeldingen zijn nogal zwaar. Ook als ze opgeslagen worden in favorieten (localStorage < ook een probleem op sommige browsers).
 
-
-### Afbeeldingen
+### <a name="afbeeldingen"></a> Afbeeldingen
 
 ![alt tag](readme_imgs/afbeeldingen.png)
 
@@ -29,10 +37,10 @@ Dan kan er gebruik gemaakt worden van het picture element, met srcset. Hierdoor
 kan de optimale foto ingeladen worden.
 
 
-### Javascript
+### <a name="javascript"></a> Javascript
 
 - Zonder Javascript is de app helemaal niet toegankelijk. Ook wordt er geen feedback gegeven
-aan de gebruiker. Dit komt blokkerende js. 
+aan de gebruiker. Dit komt blokkerende js.
 
 - Het serverside renderen van de content, hierdoor zijn we niet meer afhankelijk van de client en kan
 de gebruiker altijd de content bereiken
@@ -48,8 +56,7 @@ if (typeof(Storage) !== "undefined") {
 }
 ```
 
-### Broadband internet
-
+### <a name="broadband"></a> Broadband internet
 
 De eerste 'pagina' wordt erg snel geladen:
 
@@ -61,16 +68,20 @@ Hij haalt nu 15 huizen op per keer dit zou er gewoon 1 kunnen zijn. Dus hier val
 
 
 ![alt tag](readme_imgs/objects.png)
- 
-### Kleur
 
-### Mouste/Terackpad
+### <a name="kleur"></a> Kleur
 
-- Een gedeelte van de focus styles ontbreken.
+Iets wat niet vaak gecheckt word door developers maar vooral ook visual designers, is dat mensen kleuren anders kunnen interpeteren (kleuren blindheid). Dit zelfde is het geval met computers, deze renderen kleuren allemaal anders. Daarom is het kiezen van de goeie kleuren erg belangrijk om dingen goed leesbaar te maken.
 
+In dit geval zit er in de kleuren die er gebruikt worden genoeg contrast. Tools om dit te checken zijn:
 
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/)
 
-### Verbeter punten
+### <a name="mouse"></a> Mouse/Trackpad
+
+- Een gedeelte van de focus styles ontbreken, een gedeelte is er wel.
+
+### <a name="verbeter"></a> Verbeter punten
 
 1. Feedback naar de gebruiker (no-script)
 2. Serverside renderen van de content
