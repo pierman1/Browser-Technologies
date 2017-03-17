@@ -79,7 +79,7 @@ In dit geval zit er in de kleuren die er gebruikt worden genoeg contrast. Tools 
 
 ### <a name="mouse"></a> Mouse/Trackpad
 
-- Een gedeelte van de focus styles ontbreken, een gedeelte is er wel.
+Een gedeelte van de focus styles ontbreken, een gedeelte is er wel. Hierdoor is niet de hele app te gebruiken, maar wel voor een groot deel.
 
 ### <a name="verbeter"></a> Verbeter punten
 
