@@ -1,0 +1,44 @@
+body {
+    background-color: #333540;
+    margin: 0;
+
+    font-family: 'Open Sans';
+
+    color: #E8946F;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu';
+}
+
+a {
+    color: #fff;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+code {
+    color: darkgrey;
+}
+
+legend {
+    font-family: 'Ubuntu';
+}
+
+fieldset {
+    margin-top: 1rem;
+}
+
+strong {
+    font-size: 800;
+}
+
+.quote {
+    font-family: 'Ubuntu';
+    line-height: 1.5;
+}

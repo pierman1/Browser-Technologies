@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/html5.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu" rel="stylesheet">
+    <title>Html 5 features</title>
+</head>
+<body>
+    <main>
+        <h1>HTML5 Features</h1>
+        <h2><code>&lt;input type="date"></code> en het <code>&lt;input type="color"></code></h2>
+        <h3>Browser support: Date & Time, Color Input type</h3>
+        <h4><strong>Date & Time input</strong></h4>
+        <p class="ciu_embed" data-feature="input-datetime" data-periods="future_1,current,past_1,past_2">   <a href="http://caniuse.com/input-datetime">Can I Use input-datetime?</a></p>
+        <h4><strong>Color input type</strong></h4>
+        <p class="ciu_embed" data-feature="input-color" data-periods="future_1,current,past_1,past_2">   <a href="http://caniuse.com/input-color">Can I Use input-color?</a></p>
+        <form>
+            <fieldset>
+                <legend>Native</legend>
+                <label for="date">Date:</label>
+                <input type="date" id="date" placeholder="mm/dd/yy"></br></br>
+                <label for="color">Color:</label>
+                <input type="color" id="color">
+            </fieldset>
+            <fieldset>
+                <legend>Fallbacks</legend>
+                <p>Als <code>&lt;input type="date"></code> niet supported is ziet de browser: <code>&lt;input type="text"></code>. Je kan een placeholder attribuut gebruiken: </br><code>&lt;input type="date" placeholder="mm/dd/yy"></code> browsers die dit niet supporten maken hiervan: <code>&lt;input type="text" placeholder="mm/dd/yy"></code>.
+                    Nu heeft hij een placeholder om de gebruiker feedback te geven over het gewenste 'format'. De server checked de input en als het nodig is maakt hij er dit van:</p>
+                <label for="date">Date:</label>
+                <input type="text" placeholder="mm/dd/yy">
+                </br>
+                </br>
+                <p>Als <code>&lt;input type="color"></code> niet gesupport wordt door de browser: <code>&lt;input type="text"></code>. Je kan ervoor kiezen om de gebruiker de kleur te laten typen in het inputveld, dit is wel erg fout gevoelig daarom is het misschien slim om een dropdown aan te bieden met de kleuren (standaard kleuren bv) daarin.
+
+                <p> De 'color input' is een: <code>&lt;select></code> met een aantal standaard kleuren. De value string wordt geconverteerd naar een hex-code.</p>
+                <label for="color">Color:</label>
+                <select>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                    <option value="orange">orange</option>
+                    <option value="purple">purple</option>
+                    <option value="pink">pink</option>
+                    <option value="brown">brown</option>
+                    <option value="black">black</option>
+                    <option value="white">white</option>
+                    <option value="grey">grey</option>
+                </select>
+
+                <p>Om dit mogelijk te maken, heb je de volgende html elementen nodig: </p></br>
+                <code>
+                    &lt;input type="color" id="colorpicker"></br>
+                    </br>
+                    &lt;select id="colorpicker-fallback"></br>
+                    &lt;option value="red">red</option></br>
+                    &lt;option value="green">green</option></br>
+                    &lt;option value="blue">blue</option></br>
+                    &lt;option value="orange">orange</option></br>
+                    &lt;option value="purple">purple</option></br>
+                    &lt;option value="pink">pink</option></br>
+                    &lt;option value="brown">brown</option></br>
+                    &lt;option value="black">black</option></br>
+                    &lt;option value="white">white</option></br>
+                    &lt;option value="grey">grey</option></br>
+                    &lt;select>
+                </code>
+                <p>Met een paar simpele regels JavaScript kan je vervolgens checken of de input typeattribuut text is, en op basis daarvan de default of de fallback tonen</p>
+                <code>
+                    var colorpicker = document.querySelector('#colorpicker');</br>
+                    var colorpickerAttr = colorpicker.getAttribute('type');</br>
+                    var colorpickerFallback = document.querySelector('#colorpicker-fallback');</br>
+                    </br>
+                    if(colorpickerAttr == text){</br>
+                    colorpicker.classList.add('hide');</br>
+                    colorpickerFallback.classList.remove('hide');</br>
+                    }
+                </code>
+            </fieldset>
+        </form>
+        <h2>Het gebruiken van Polyfills</h2>
+        <p>Je zou ervoor kunnen kiezen om Polyfills te gebruiken als fallback. </p>
+
+        <p class="quote">&ldquo;A polyfill, or polyfiller, is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively. &rdquo;</p>
+
+        <p>Polyfills die gebruikt kunnen worden voor <code>&lt;input type="date"></code> en <code>&lt;input type="color"></code> zijn:</p>
+
+        <ul>
+            <li>
+                <a href="https://github.com/bgrins/spectrum">Spectrum voor de 'colorpicker'</a>
+            </li>
+            <li>
+                <a href="https://github.com/aFarkas/webshim">Webshim for colorpicker, datepicker and many more</a>
+            </li>
+            <li>
+                <a href="https://github.com/chemerisuk/better-dateinput-polyfill">Date input polyfill</a>
+            </li>
+            <li>
+                <a href="https://github.com/brianblakely/nodep-date-input-polyfill">Polyfill date/time</a>
+            </li>
+        </ul>
+
+        <h2>Bronnen:</h2>
+
+        <ul>
+            <li>
+                <a href="//caniuse.com">Can I use</a>
+            </li>
+            <li>
+                <a href="https://www.arclab.com/en/kb/htmlcss/display-date-time-javascript-php-ssi.html">Display Date and Time artikel</a>
+            </li>
+        </ul>
+
+
+    </main>
+</body>
+</html>
