@@ -9,7 +9,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Ubuntu';
 }
 
@@ -38,7 +39,19 @@ strong {
     font-size: 800;
 }
 
+img {
+    width: 100%;
+}
+
 .quote {
     font-family: 'Ubuntu';
     line-height: 1.5;
+}
+
+.separator {
+    border-bottom: 3px solid gray;
+}
+
+.hidden{
+    display: none;
 }
