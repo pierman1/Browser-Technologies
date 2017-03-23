@@ -58,7 +58,7 @@ Het [Picture](https://developer.mozilla.org/en/docs/Web/HTML/Element/picture) el
  Alleen opera mini support het helemaal niet. Hieronder is rekening gehouden met de verschillende browsers die dit niet, of gedeeltelijk
  ondersteunen.
  
- Voorbeeld:
+ *Voorbeeld:*
  
  ```
  .gradient {
@@ -107,7 +107,7 @@ Het [Picture](https://developer.mozilla.org/en/docs/Web/HTML/Element/picture) el
  
  is required. With calc(), you can perform calculations to determine CSS property values.
 
-**Voorbeeld:**
+*Voorbeeld:*
 
 CSS:
 ```
@@ -164,4 +164,9 @@ De code in de query word alleen uitgevoerd, en geld aleen als de feature beschik
 Als Geolocatie niet beschikbaar is,
 
 ### Feature 6 - Google maps
+
+Er word in eerste instantie een afbeelding getoond. Als JS beschikbaar is word deze vervangen door een afbeelding.
+
+
+
 
