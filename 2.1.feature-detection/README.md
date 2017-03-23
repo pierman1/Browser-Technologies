@@ -8,7 +8,7 @@
 
 Het [Picture](https://developer.mozilla.org/en/docs/Web/HTML/Element/picture) element is een container die wordt gebruikt om
  meerdere `<source>` elementen te specificeren voor een specifieke `<img>`.
- Ook is het een nieuw HTML element en wordt niet door alle browsers ondersteund.
+ Het is een nieuw HTML element en wordt niet door alle browsers ondersteund.
  
  "A responsive images method to control which image resource a user agent presents to a user, based on resolution, media query and/or support for a particular image format"
  
@@ -40,9 +40,13 @@ Het [Picture](https://developer.mozilla.org/en/docs/Web/HTML/Element/picture) el
        if (('open' in document.createElement('details'))) {
            document.getElementById('fallback').classList.add('hidden');
        }
+       
 ```
 
- Bron: http://html5doctor.com/the-details-and-summary-elements/
+ *Bronnen:*
+  
+  - http://html5doctor.com/the-details-and-summary-elements/
+  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
  
  ## CSS
  
@@ -127,6 +131,28 @@ HTML:
 
 Voorbeeld op [Codepen](http://codepen.io/pierman1/pen/vxjQjv)
 
+### Feature 7 - Feature Queries
+
+Met [Feature Queries](https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/) (`@support`) kan je 
+als het ware testen of een feature gesupport word. Dit is een goeie manier voor het implementeren van 'fancy' interfaces,
+vanuit de Progressive Enhancement gedachte.
+
+De code in de query word alleen uitgevoerd, en geld aleen als de feature beschikbaar is:
+
+```
+@supports (display: grid) {
+   // code that will only run if CSS Grid is supported by the browser 
+   
+   display: grid;
+ }
+```
+
+**Bronnen:**
+
+- https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/
+
+
+
 ## JavaScript
 
 ### Feature 5 - Geo location
@@ -139,5 +165,3 @@ Als Geolocatie niet beschikbaar is,
 
 ### Feature 6 - Google maps
 
-
-joost mag het weten

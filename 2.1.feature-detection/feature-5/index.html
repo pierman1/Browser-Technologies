@@ -17,6 +17,7 @@
 
         h1 {
             color: white;
+            text-align: center;
         }
 
         .locationForm {
@@ -31,6 +32,8 @@
 
         button {
             padding: 1em;
+            background-color: #333540;
+            color: #fff;
         }
 
         input {
@@ -42,14 +45,24 @@
             display: none;
         }
 
+        .form, .locatie {
+            width: 90%;
+            margin:0 auto;
+            max-width: 800px;
+            color: #fff;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
     </style>
 
 </head>
 <body>
 
 <body>
+<h1>Geolocation</h1>
 
-    <section class="locationForm">
+    <section class="form">
 
         <form>
             <label for="locatie">Locatie</label>
@@ -65,7 +78,7 @@
 
 <script>
 
-    var form = document.querySelector('.locationForm');
+    var form = document.querySelector('.form');
 
     var headers = document.querySelectorAll('.locatie');
 

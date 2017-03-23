@@ -8,6 +8,7 @@
     <title>Feature 3 - Details & Summary element</title>
 
     <style>
+
         body {
             background-color: #333540;
             padding: 1.5em;
@@ -90,6 +91,7 @@
         .hidden {
             display: none;
         }
+
     </style>
 
 </head>
@@ -110,7 +112,7 @@
         </div>
     </a>
     <div id="summary" class="summary">
-        <p>Dit is de fallback als het details & Summary element niet ondersteund word door de browser (of als Javascript uit staat).</p>
+        <p><strong>Dit is de fallback als het details & Summary element niet ondersteund word door de browser (of als Javascript uit staat).</strong></p>
     </div>
 </section>
 
@@ -119,9 +121,9 @@
 <script>
 
     var details = document.getElementById('details');
-
     details.classList.remove('hidden');
 
+    // (if element supported
     if (('open' in document.createElement('details'))) {
         document.getElementById('fallback').classList.add('hidden');
     }
