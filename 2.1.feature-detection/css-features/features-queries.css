@@ -1,0 +1,66 @@
+
+/* Feature Query -----------------------*/
+
+@supports ( display: flex ) {
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header {
+        align-self: flex-start;
+    }
+
+    .nav,
+    .sidebar,
+    .content {
+        flex: 1;
+    }
+
+    .content {
+        flex: 4;
+    }
+
+    .sidebar {
+        flex: 2;
+    }
+
+    .header,
+    .footer {
+        flex: 100%;
+        text-align: center;
+    }
+}
+
+/* ------------------------------------ */
+
+.box {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+
+dl * {
+    margin: 1em inherit;
+}
+
+@media (max-width: 50em) {
+    .nav {
+        flex: 100%;
+    }
+
+    .nav li {
+        display: inline;
+    }
+}
+
+@media (max-width: 36em) {
+    .content,
+    .sidebar {
+        flex: 100%;
+    }
+}

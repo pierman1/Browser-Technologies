@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: #333540;
+            padding: 1.5em;
+            font-family: sans-serif;
+            line-height: 1.7;
+        }
+        
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .thing {
+            width: 80%; /* fallback if needed */
+            width: calc(80% - 3em);
+
+            background-color: #f06d06;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Calc()</h1>
+
+    <div class="thing">
+        <h2>Calc() is cool</h2>
+        <div class="content">
+            <p>The container is calc(80% -3em) in width. If calc is not supported; the fall back will be used (width 80%). </p>
+        </div>
+    </div>
+
+</body>
+</html>
