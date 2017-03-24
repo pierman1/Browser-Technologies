@@ -14,6 +14,11 @@ Het [Picture](https://developer.mozilla.org/en/docs/Web/HTML/Element/picture) el
  
  **Fallback:** Als de browser de picture tag support, dan wordt er 1 van de drie afbeeldingen in een van de `<source>` elementen getoond. Dit
  opbasis van dew grote van je scherm (hoge, medium en lage kwaliteit).
+ 
+  ![alt text](images-readme/f1-IE9.png "Can i use")
+  
+  Zoals hier boven te zien, word nu de standaard img getoond.
+
   
  
  ### Feature 2 - Details & Summary element
@@ -42,6 +47,10 @@ Het [Picture](https://developer.mozilla.org/en/docs/Web/HTML/Element/picture) el
        }
        
 ```
+
+Op IE9 word de fallback getoond:
+
+ ![alt text](images-readme/f2-IE9.png "Can i use")
 
  *Bronnen:*
   
@@ -92,6 +101,11 @@ Het [Picture](https://developer.mozilla.org/en/docs/Web/HTML/Element/picture) el
     }
     
 ```
+
+Op IE9 word de fallback afbeelding (svg) getoond, zie hieronder:
+
+ ![alt text](images-readme/f3-IE9.png "Can i use")
+
 
 ### Feature 4 - Calc()
 

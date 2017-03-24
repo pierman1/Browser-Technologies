@@ -114,8 +114,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="558">
-                <caret line="167" column="114" lean-forward="false" selection-start-line="167" selection-start-column="114" selection-end-line="167" selection-end-column="114" />
+              <first_editor relative-caret-position="495">
+                <caret line="104" column="64" lean-forward="false" selection-start-line="104" selection-start-column="64" selection-end-line="104" selection-end-column="64" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -388,12 +388,12 @@
       <updated>1490177185754</updated>
       <workItem from="1490177187149" duration="3334000" />
       <workItem from="1490220474599" duration="16097000" />
-      <workItem from="1490284267076" duration="1128000" />
+      <workItem from="1490284267076" duration="2189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20559000" />
+    <option name="totallyTimeSpent" value="21620000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,8 +622,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="558">
-            <caret line="167" column="114" lean-forward="false" selection-start-line="167" selection-start-column="114" selection-end-line="167" selection-end-column="114" />
+          <first_editor relative-caret-position="495">
+            <caret line="104" column="64" lean-forward="false" selection-start-line="104" selection-start-column="64" selection-end-line="104" selection-end-column="64" />
             <folding />
           </first_editor>
           <second_editor />
