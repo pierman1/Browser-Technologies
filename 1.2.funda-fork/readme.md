@@ -7,7 +7,9 @@ Gedacht vanuit de Progressive Enhancement strategie
 - [Verbeteringen](#verbeteringen)
 - [Afbeeldingen](#afbeeldingen)
 - [Javascript](#javascript)
+- [Cookies](#cookies)
 - [Broadband internet](#broadband)
+- [Keyboard navigation](#keyboard)
 - [Kleur](#kleur)
 - [Mouse/Trackpad](#mouse)
 - [Verbeter punten](#verbeter)
@@ -55,6 +57,14 @@ if (typeof(Storage) !== "undefined") {
     // Fallback (can be object storage)
 }
 ```
+
+### <a name="cookies"></a> Coockies
+
+Er wordt geen gebruik gemaakt van cookies in deze applicatie.
+
+### <a name="keyboard"></a> Keyboard navigation
+
+Veel states ontbreken. Deze moeten worden toegevoegd om de applicatie compleet door 'tabbaar' te maken.
 
 ### <a name="broadband"></a> Broadband internet
 

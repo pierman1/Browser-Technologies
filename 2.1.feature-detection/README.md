@@ -175,11 +175,34 @@ De code in de query word alleen uitgevoerd, en geld aleen als de feature beschik
 
 [Geolocation]() wordt niet door alle browsers ondersteund (	94.49% bijna allemaal).
 
-Als Geolocatie niet beschikbaar is,
+
+Ik heb een fallback gemaakt die problemen voorkomt als de browser geoloatie niet ondersteund.
+
+- Check of Geolocatie feature beschikbaar is
+- Als hij beschikbaar is, word de longitude en de latitude ge-'print' op het scherm.
+- Als hij **niet** beschikbaar is, word er ook een formulier getoond waar de gebruiker handmatig zijn locatie kan invullen.
+
+Dus op het moment als de feature beschikbaar is, wordt de locatie automatisch neer gezet waar de gebruiker zich bevind.
+
+Bronnen:
+
+- https://gist.github.com/paulirish/366184
+
 
 ### Feature 6 - Google maps
 
 Er word in eerste instantie een afbeelding getoond. Als JS beschikbaar is word deze vervangen door een afbeelding.
+
+Dus de twee use cases zijn:
+
+Met JavaScript:
+
+- Er wordt een interactieve map getoond van de Google Maps API
+
+Zonder JavaScript:
+
+- Er wordt een afbeelding getoond, zodat de gebuiker altijd nog kan navigeren naar zijn bestemming
+
 
 
 
