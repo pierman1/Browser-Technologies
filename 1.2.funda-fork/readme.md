@@ -105,6 +105,8 @@ Ik heb gebruik gemaakt van de ChromeVox extension van Chrome om mijn web pagina 
 
 - Omdat ik dingen hide met JavaScript gaat het uitlezen van de DOM niet zo goed. Al die elementen staan natuurlijk nog in de DOM en worden daarom ook voorgelezen.
 
+![alt tag](https://lh6.googleusercontent.com/CNTa_V2mI-cDGTKn23lptyBuYo6I2rv7HSeMpN_0Jc9dY7OocO1azJ_W4YTAOPXdJdgntkKV=s128-h128-e365)
+
 ### <a name="device"></a> Device lab
 
 De meeste devices van het Device lab gaan aardig goed om met mijn SPA. Alleen maak ik gebruik van localStorage en dit is niet op elk device gesupport.
