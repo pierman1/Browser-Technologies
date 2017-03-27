@@ -10,6 +10,7 @@ Gedacht vanuit de Progressive Enhancement strategie
 - [Cookies](#cookies)
 - [Broadband internet](#broadband)
 - [Keyboard navigation](#keyboard)
+- [Custom Fonts](#fonts)
 - [Kleur](#kleur)
 - [Mouse/Trackpad](#mouse)
 - [Verbeter punten](#verbeter)
@@ -78,6 +79,11 @@ Hij haalt nu 15 huizen op per keer dit zou er gewoon 1 kunnen zijn. Dus hier val
 
 
 ![alt tag](readme_imgs/objects.png)
+
+### <a name="fonts"></a> Custom Fonts
+
+- Er wordt geen gebruik gemaakt van icon-fonts
+- "To combat the FOIT (Flash Of Invisible Text) a Fontface Observer can be implemented to show a temporary fallback font.""
 
 ### <a name="kleur"></a> Kleur
 
