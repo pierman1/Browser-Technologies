@@ -5,14 +5,16 @@ Gedacht vanuit de Progressive Enhancement strategie
 
 ## Table of contents
 - [Verbeteringen](#verbeteringen)
-- [Afbeeldingen](#afbeeldingen)
-- [Javascript](#javascript)
-- [Cookies](#cookies)
-- [Broadband internet](#broadband)
-- [Keyboard navigation](#keyboard)
-- [Custom Fonts](#fonts)
-- [Kleur](#kleur)
-- [Mouse/Trackpad](#mouse)
+- [1. Afbeeldingen](#afbeeldingen)
+- [2. Javascript](#javascript)
+- [3. Cookies](#cookies)
+- [4. Broadband internet](#broadband)
+- [5. Keyboard navigation](#keyboard)
+- [6. Custom Fonts](#fonts)
+- [7. Kleur](#kleur)
+- [8. Mouse/Trackpad](#mouse)
+- [Screen Reader](#screen)
+- [Device lab](#device)
 - [Verbeter punten](#verbeter)
 
 ![alt tag](readme_imgs/first-state.png)
@@ -96,6 +98,25 @@ In dit geval zit er in de kleuren die er gebruikt worden genoeg contrast. Tools 
 ### <a name="mouse"></a> Mouse/Trackpad
 
 Een gedeelte van de focus styles ontbreken, een gedeelte is er wel. Hierdoor is niet de hele app te gebruiken, maar wel voor een groot deel.
+
+### <a name="screen"></a> Screen readers
+
+Ik heb gebruik gemaakt van de ChromeVox extension van Chrome om mijn web pagina te laten voorlezen. Ik ben erachter gekomen dat er een heleboel mis gaat voor gebruikers met screen-readers.
+
+- Omdat ik dingen hide met JavaScript gaat het uitlezen van de DOM niet zo goed. Al die elementen staan natuurlijk nog in de DOM en worden daarom ook voorgelezen.
+
+### <a name="device"></a> Device lab
+
+De meeste devices van het Device lab gaan aardig goed om met mijn SPA. Alleen maak ik gebruik van localStorage en dit is niet op elk device gesupport.
+
+![alt tag](readme_imgs/device-1.jpg)
+
+![alt tag](readme_imgs/device-2.jpg)
+
+![alt tag](readme_imgs/device-3.jpg)
+
+![alt tag](readme_imgs/device-4.jpg)
+
 
 ### <a name="verbeter"></a> Verbeter punten
 
