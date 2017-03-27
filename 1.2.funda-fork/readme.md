@@ -111,13 +111,13 @@ Ik heb gebruik gemaakt van de ChromeVox extension van Chrome om mijn web pagina 
 
 De meeste devices van het Device lab gaan aardig goed om met mijn SPA. Alleen maak ik gebruik van localStorage en dit is niet op elk device gesupport.
 
-![alt tag](readme_imgs/device-1.jpg)
+![alt tag](readme_imgs/device-1.jpeg)
 
-![alt tag](readme_imgs/device-2.jpg)
+![alt tag](readme_imgs/device-2.jpeg)
 
-![alt tag](readme_imgs/device-3.jpg)
+![alt tag](readme_imgs/device-3.jpeg)
 
-![alt tag](readme_imgs/device-4.jpg)
+![alt tag](readme_imgs/device-4.jpeg)
 
 
 ### <a name="verbeter"></a> Verbeter punten
