@@ -109,7 +109,7 @@ Ik heb gebruik gemaakt van de ChromeVox extension van Chrome om mijn web pagina 
 
 ### <a name="device"></a> Device lab
 
-De meeste devices van het Device lab gaan aardig goed om met mijn SPA. Alleen maak ik gebruik van localStorage en dit is niet op elk device gesupport.
+De meeste devices van het Device lab gaan aardig goed om met mijn SPA. Alleen maak ik gebruik van localStorage en dit is niet op elk device gesupport. Waardoor de app dus niet optimaal gebruikt kan worden. (Niet alle filter opties kunnen ingevuld worden).
 
 ![alt tag](readme_imgs/device-1.jpeg)
 
