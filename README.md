@@ -6,6 +6,8 @@ Een van de mooiste principes van het web is dat het er echt is voor iedereen. Ie
 
 In het vak Browser Technologies leer je hoe je goede, robuuste, toegankelijke websites maakt. Je gaat leren over Progressive Enhancement, Feature Detection en Fallback. Het web is er voor iedereen. In dit vak leer je hoe je daarvoor kan zorgen.
 
+Bron: https://moodle.cmd.hva.nl/course/view.php?id=281
+
 Klik door naar de opdrachten:
 
 [Opdracht 1.1](https://github.com/pierman1/Browser-Technologies/blob/master/1.1.breek-het-web/browser.technologies.presentatie.pdf)
