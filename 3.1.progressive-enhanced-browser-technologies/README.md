@@ -8,7 +8,7 @@ Maak een demo op basis van een use case. Zorg dat alle gbruikers, met alle brows
 
 > Ik wil een notificatie krijgen als mijn favoriete voetbalteam heeft gewonnen.
 
-[Notifications](https://notifications.spec.whatwg.org/)
+Hiervoor wil ik gebruik maken van [Web Notifications](https://notifications.spec.whatwg.org/).
 
 ![alt text](readme_images/can_i_use.png "Can i use")
 
