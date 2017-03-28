@@ -34,6 +34,7 @@ Als JS wel beschikbaar is:
 #### HTTP-equiv
 
 [HTTP-equiv](http://reference.sitepoint.com/html/meta/http-equiv)
+
 ![alt text](readme_images/equiv-compat.png "Compatibility http-equiv")	
 
 
