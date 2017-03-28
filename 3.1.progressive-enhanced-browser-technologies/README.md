@@ -8,7 +8,7 @@ Maak een demo op basis van een use case. Zorg dat alle gbruikers, met alle brows
 
 > Ik wil een notificatie krijgen als mijn favoriete voetbalteam heeft gewonnen.
 
-Hiervoor wil ik gebruik maken van [Web Notifications](https://notifications.spec.whatwg.org/).
+Hiervoor wil ik gebruik maken van [Web Notifications](https://notifications.spec.whatwg.org/). Dit wordt niet gesupport door alle browsers, dus daarom een goeie case om Progressive Enhancement op toe te passen.
 
 ![alt text](readme_images/can_i_use.png "Can i use")
 
