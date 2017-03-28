@@ -1,4 +1,4 @@
-# Oprdacht 3.1 - Progressive Enhanced Browser Technologies
+# Opdracht 3.1 - Progressive Enhanced Browser Technologies
 
 **De opdracht:**
 
@@ -14,6 +14,22 @@ Maak een demo op basis van een use case. Zorg dat alle gbruikers, met alle brows
 
 ### Demo
 
+In deze de demo kan de gebruiker kijken of zijn of haar team gewonnen of verloren heeft. De core bestaat uit 4 html files. 
+
+Verloop:
+
+- Gebruiker komt binnen op de index.html pagina
+- Vervolgens wordt er gecheckt of JavaScript beschikbaar is of niet
+
+Als JS beschikbaar niet is:
+
+	- Als dit niet het geval is wordt er door middel van een meta equiv een refresh gemaakt naar de 1.html, daar staat vervolgens de eerste score.
+	- Vanuit deze gaat hij weer naar 2.html en so on.
+
+Als JS wel beschikbaar is:
+
+	- Er wordt met een ajax call om de 10 seconden data opgehaald uit de verschillende HTML bestanden. 
+	- Als er een extra pagina wordt toegevoegd dan wordt deze score meegenomen in de JS versie. 
 
 
 ```
