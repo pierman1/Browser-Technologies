@@ -8,6 +8,21 @@ Maak een demo op basis van een use case. Zorg dat alle gbruikers, met alle brows
 
 > Ik wil een notificatie krijgen als mijn favoriete voetbalteam heeft gewonnen.
 
+[Notifications](https://notifications.spec.whatwg.org/)
+
+![alt text](readme_images/can_i_use.png "Can i use")
+
+### Demo
+
+
+
+```
+	<noscript>
+		<meta id="next" http-equiv="refresh" content="5; URL=1.html" data-next="1.html">
+	</noscript>
+```
+
+
 Beoordelingscriteria
 
 - De code staat in een repository op GitHub
