@@ -8,7 +8,7 @@ Maak een demo op basis van een use case. Zorg dat alle gbruikers, met alle brows
 
 > Ik wil een notificatie krijgen als mijn favoriete voetbalteam heeft gewonnen.
 
-Hiervoor wil ik gebruik maken van [Web Notifications](https://notifications.spec.whatwg.org/). Dit wordt niet gesupport door alle browsers, dus daarom een goeie case om Progressive Enhancement op toe te passen.
+Hiervoor wil ik gebruik maken van [Web Notifications](https://notifications.spec.whatwg.org/). Dit wordt niet gesupport door alle browsers, dus daarom een goeie case om Progressive Enhancement op toe te passen. 
 
 ![alt text](readme_images/can_i_use.png "Can i use")
 
@@ -37,6 +37,7 @@ Als JS wel beschikbaar is:
 
 ![alt text](readme_images/equiv-compat.png "Compatibility http-equiv")	
 
+Bronnen: https://www.w3.org/TR/WCAG20-TECHS/H76.html
 
 ```
 	<noscript>
