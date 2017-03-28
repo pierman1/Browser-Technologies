@@ -31,6 +31,11 @@ Als JS wel beschikbaar is:
 	- Er wordt met een ajax call om de 10 seconden data opgehaald uit de verschillende HTML bestanden. 
 	- Als er een extra pagina wordt toegevoegd dan wordt deze score meegenomen in de JS versie. 
 
+#### HTTP-equiv
+
+[HTTP-equiv](http://reference.sitepoint.com/html/meta/http-equiv)
+![alt text](readme_images/equiv-compat.png "Compatibility http-equiv")	
+
 
 ```
 	<noscript>
