@@ -39,7 +39,7 @@ Als JS wel beschikbaar is:
 ```
 
 
-Beoordelingscriteria
+### Beoordelingscriteria
 
 - De code staat in een repository op GitHub
 - Er is een REadme toegevoegd met daarin beschreven:
