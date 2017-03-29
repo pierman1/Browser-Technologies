@@ -1,0 +1,1 @@
+alert('es6 woeh');

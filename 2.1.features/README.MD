@@ -2,7 +2,7 @@
 
 ## HTML5
 
-### Feature 1 - Hanging-Punctuation
+### Feature 1 - CSS | Hanging-Punctuation
 
   ![alt text](readme_images/1.png "Can i use")
   
@@ -25,7 +25,7 @@
   Als de feature niet beschikbaar is krijgt de eerste letter van het ``<p>`` element een margin-left van -1em. Waardoor de eerste letter ``1rem`` naar link verschuift. 
   
   
-### Feature 2 - Gradients
+### Feature 2 - CSS | Gradients
  
   ![alt text](readme_images/f3.png "Can i use")
  
@@ -70,11 +70,27 @@
 
 Op IE9 word de fallback afbeelding (svg) getoond, zie hieronder:
 
-### Feature 3 - Gradients
-### Feature 4 - Gradients
-### Feature 5 - Gradients
+### Feature - 3 Video
 
-### Feature 6 - LocalStorage
+![alt text](readme_images/f3.png)
+
+Als het video element niet gesupport word dan word er een afbeelding getoond als fallback, dit is het geval in de browser: Opera Mini.
+
+![alt text](readme_images/f3-opera.png)
+
+### Feature 4 - Audio
+
+### Feature 5 - JS | ES6 
+![alt text](readme_images/f5.png)
+
+
+Bronnen:
+- http://stackoverflow.com/questions/29046635/javascript-es6-cross-browser-detection
+- http://stackoverflow.com/questions/29046635/javascript-es6-cross-browser-detection
+- https://gist.github.com/bendc/d7f3dbc83d0f65ca0433caf90378cd95
+
+
+### Feature 6 - JS | LocalStorage
 
 ![alt text](readme_images/6.png)
 
