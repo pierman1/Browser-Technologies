@@ -6,10 +6,26 @@
 
   ![alt text](readme_images/1.png "Can i use")
   
+  CSS [Hanging-punctuation](https://css-tricks.com/almanac/properties/h/hanging-punctuation/)
+  is bedoeld om web designers preciezere controle te geven over de typografie op het web.
   
-
-
-### Feature 3 - Gradients
+  Met hanging punctuation zet je een letter(s) buiten hun text element, waardoor de de text meer doorloopt.
+   
+  Bijvoorbeeld de quote net een tikkie naar links verschuiven.
+  
+  Omdat dit door weinig browsers gesupport word (eigenlijk alleen op Safari) maak ik gebruik van een Feature
+  Query om te checken of beschikbaar is.
+  
+  ```
+  @support (hanging-punction) {
+  
+  }
+  ```   
+  
+  Als de feature niet beschikbaar is krijgt de eerste letter van het ``<p>`` element een margin-left van -1em. Waardoor de eerste letter ``1rem`` naar link verschuift. 
+  
+  
+### Feature 2 - Gradients
  
   ![alt text](readme_images/f3.png "Can i use")
  
@@ -53,3 +69,19 @@
 ```
 
 Op IE9 word de fallback afbeelding (svg) getoond, zie hieronder:
+
+### Feature 3 - Gradients
+### Feature 4 - Gradients
+### Feature 5 - Gradients
+
+### Feature 6 - LocalStorage
+
+![alt text](readme_images/6.png)
+
+[LocalStorage]() word best goed gesupport. Maar niet door Opera Mini. 
+ 
+ Op het moment als LocalStorage niet beschikbaar is word de input van de gebruiker in een array opgeslagen.
+ Dit zou een goeie fallback kunnen zijn voor een SPA. 
+ 
+
+
