@@ -9,8 +9,14 @@
   CSS [Hanging-punctuation](https://css-tricks.com/almanac/properties/h/hanging-punctuation/)
   is bedoeld om web designers preciezere controle te geven over de typografie op het web.
   
-  Met hanging punctuation zet je een letter(s) buiten hun text element, waardoor de de text meer doorloopt.
+  Met hanging punctuation zet je een letter(s) buiten hun text element, waardoor de text meer doorloopt.
    
+  ```
+  blockquote {
+    hanging-punctuation: first;
+  }
+  ```
+  
   Bijvoorbeeld de quote net een tikkie naar links verschuiven.
   
   Omdat dit door weinig browsers gesupport word (eigenlijk alleen op Safari) maak ik gebruik van een Feature
@@ -24,12 +30,14 @@
   
   Als de feature niet beschikbaar is krijgt de eerste letter van het ``<p>`` element een margin-left van -1em. Waardoor de eerste letter ``1rem`` naar link verschuift. 
   
+  Bron: https://css-tricks.com/almanac/properties/h/hanging-punctuation/
   
 ### Feature 2 - CSS | Gradients
  
   ![alt text](readme_images/f3.png "Can i use")
  
  CSS [Gradients](https://css-tricks.com/css3-gradients/) worden door de meeste browsers wel ondersteund of gedeeltelijk ondersteund.
+ 
  Alleen opera mini support het helemaal niet. Hieronder is rekening gehouden met de verschillende browsers die dit niet, of gedeeltelijk
  ondersteunen.
  
@@ -78,7 +86,9 @@ Als het video element niet gesupport word dan word er een afbeelding getoond als
 
 ![alt text](readme_images/f3-opera.png)
 
-### Feature 4 - Audio
+### Feature 4 - SVG
+
+
 
 ### Feature 5 - JS | ES6 
 ![alt text](readme_images/f5.png)
