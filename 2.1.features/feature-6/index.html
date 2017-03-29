@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    body {
+        background-color: #19212a;
+        color: #fff;
+        text-align: center;
+    }
+
+    input {
+        font-size: 1.5rem;
+        padding:.5rem;
+    }
+
+    button {
+        background-color: aqua;
+        border:none;
+        font-size: 1rem;
+    }
+
+</style>
+<body>
+
+
+    <input type="text" name="lastname">
+    <br><br>
+    <button value="submit">Klik</button>
+
+    <p class="display"></p>
+
+
+<script>
+
+
+    var submit = document.querySelector('[value=submit]');
+    var display = document.querySelector('.display');
+
+    console.log(submit)
+
+    submit.addEventListener('click', function () {
+
+
+        var input = document.querySelector('input[type=text]').value;
+        console.log(input);
+
+        // place to store user input if localStorage is not avaiable
+        var userInput = [];
+
+        if (typeof localStorage !== 'undefined') {
+
+            localStorage.setItem('userInput', input);
+            display.innerHTML = localStorage.getItem('userInput');
+
+
+        } else {
+
+            userInput.push(input)
+            display.innerHTML = userInput;
+
+        }
+
+    })
+
+
+    if (typeof localStorage !== 'undefined') {
+
+        display.innerHTML = localStorage.getItem('userInput');
+
+    } else {
+
+        display.innerHTML = 'Not able to store locally so you have to restart!'
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -5,20 +5,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hanging Punctation</title>
 
     <style>
 
-        body {
-            background: url('1.jpg') top left no-repeat,
-            url('1.jpg') bottom left repeat-y,
-            url('1.jpg') top right no-repeat;
-            background-size: 50vw;
+        blockquote {
+            font-style: italic;
+            font-size: 2rem;
+            width: 20em;
+            border-left: 2px solid pink;
+            padding: 3rem 0;
+            background-color: green;
+            hanging-punctuation: first;
+        }
+
+        @supports not (hanging-punctuation: first) {
+
+            blockquote {
+
+                background-color: red;
+            }
+
+            blockquote::first-letter {
+                margin-left: -1rem;
+            }
         }
 
     </style>
 </head>
 <body>
+
+<blockquote>“Et harum quidem rerum facilis est et expedita distinctio.”</blockquote>
 
 </body>
 </html>
