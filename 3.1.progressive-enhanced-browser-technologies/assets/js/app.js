@@ -23,11 +23,11 @@
             .url(nextScoreUrl)
             .type('html')
             .on('success', function(response){
+
                 var parser = new DOMParser();
                 var doc = parser.parseFromString(response, 'text/html');
 
                 var score = doc.querySelector('#newestScore');
-                console.log(score);
 
                 renderScore(score);
 
@@ -64,7 +64,7 @@
         console.log(elementText);
 
             if (!("Notification" in window)) {
-                alert("This browser does not support desktop notification");
+                console.log("This browser does not support desktop notification");
             }
 
             // Let's check whether notification permissions have already been granted
