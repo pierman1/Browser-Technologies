@@ -37,7 +37,10 @@ Als JS wel beschikbaar is:
 
 ![alt text](readme_images/equiv-compat.png "Compatibility http-equiv")	
 
-Bronnen: https://www.w3.org/TR/WCAG20-TECHS/H76.html
+Bronnen: 
+
+- https://www.w3.org/TR/WCAG20-TECHS/H76.html
+- https://developer.mozilla.org/en/docs/Web/API/notification
 
 ```
 	<noscript>
