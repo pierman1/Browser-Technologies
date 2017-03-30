@@ -15,12 +15,7 @@ Hiervoor wil ik gebruik maken van [Web Notifications](https://notifications.spec
 ### Demo
 
 In deze demo wordt de gebruiker op de hoogte gehouden van een voetbalwedstrijd.
-Dit doormiddel
-
-Verloop:
-
-- Gebruiker komt binnen op de index.html pagina
-- Vervolgens wordt er gecheckt of JavaScript beschikbaar is of niet
+Dit doormiddel van notificaties.
 
 Als JS beschikbaar niet is:
 
@@ -31,6 +26,10 @@ Als JS wel beschikbaar is:
 
 	- Er wordt met een ajax call om de 10 seconden data opgehaald uit de verschillende HTML bestanden. 
 	- Als er een extra pagina wordt toegevoegd dan wordt deze score meegenomen in de JS versie. 
+
+Als WebNotifications niet beschikbaar is:
+
+    - De webnotificaties worden niet getoond, de gebruiker kan op de hoogte blijven door de interface te checken
 
 #### HTTP-equiv
 
