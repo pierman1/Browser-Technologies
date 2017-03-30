@@ -17,9 +17,8 @@
 
     function showNextScore() {
 
-        console.log(nextScoreUrl);
-
         aja()
+
             .url(nextScoreUrl)
             .type('html')
             .on('success', function(response){
@@ -28,17 +27,21 @@
                 var doc = parser.parseFromString(response, 'text/html');
 
                 var score = doc.querySelector('#newestScore');
+                var info = doc.querySelector('#newestInfo');
 
-                renderScore(score);
+                renderScore(score, info);
 
             })
 
             .go();
 
+        console.log(nextScoreUrl);
+
     }
 
 
-    function renderScore(newestScore){
+    function renderScore(newestScore, info){
+
 
         // select element with data-score attribute
         nextScoreUrl = newestScore.getAttribute('data');
@@ -51,17 +54,22 @@
         }
 
         //  set newestScore
-        var elementText = newestScore.innerHTML;
+        var scoreText = newestScore.innerHTML;
         var score = document.querySelector('#newestScore');
-        score.innerHTML = elementText;
+        score.innerHTML = scoreText;
 
-        sendPushNotification(elementText);
+        // set newestInfo
+        info.classList.add('info');
+
+        scoreContainer[0].appendChild(info);
+
+        sendPushNotification(scoreText);
 
     }
 
-    function sendPushNotification(elementText) {
+    function sendPushNotification(scoreText) {
 
-        console.log(elementText);
+        console.log(scoreText);
 
             if (!("Notification" in window)) {
                 console.log("This browser does not support desktop notification");
@@ -71,7 +79,7 @@
             else if (Notification.permission === "granted") {
                 // If it's okay let's create a notification
                 var notification = new Notification('Nu live: Ajax - Feyenoord', {
-                    body: elementText,
+                    body: scoreText,
                     icon: '../assets/images/teams.png'
                 });
             }
@@ -81,7 +89,7 @@
                 Notification.requestPermission(function (permission) {
                     // If the user accepts, let's create a notification
                     if (permission === "granted") {
-                        var notification = new Notification(elementText);
+                        var notification = new Notification(scoreText);
                     }
                 });
             }

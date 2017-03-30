@@ -14,7 +14,8 @@ Hiervoor wil ik gebruik maken van [Web Notifications](https://notifications.spec
 
 ### Demo
 
-In deze de demo kan de gebruiker kijken of zijn of haar team gewonnen of verloren heeft. De core bestaat uit 4 html files. 
+In deze demo wordt de gebruiker op de hoogte gehouden van een voetbalwedstrijd.
+Dit doormiddel
 
 Verloop:
 

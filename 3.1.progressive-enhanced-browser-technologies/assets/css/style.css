@@ -2,7 +2,8 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-    background-color: #fff;
+	width: 100%;
+    background-color: #2f4f4f;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -17,12 +18,17 @@ header {
 	margin: 0 auto;
 }
 
+h1 {
+	font-size: 1rem;
+}
+
+
 .score-container {
 	display: block;
-	max-width: 20em;
+	width: 90%;
+	max-width: 300px;
 	padding: 1em 1.5em;
-	margin: 13em auto 0;
-	margin: 30vh auto 0;
+	margin: 2rem auto 0 auto;
 	text-align: center;
 	background-color: #fff;
 	color: #4A4A4A;
@@ -31,17 +37,7 @@ header {
 	border-top: 1px solid #ACD8CB;
 	border-bottom: 1px solid #ACD8CB;
 	border-radius: 10px;
-}
-
-.most-basic-notification > p, .basic-notification > p {
-    padding: 1em 0em;
-	border-bottom: 1px solid #232323;
-}
-
-.no-js-msg {
-	display: block;
-	font-weight: bold;
-	color: #009fe3;
+	box-sizing: border-box;
 }
 
 .strong {
@@ -53,12 +49,15 @@ header {
 }
 
 #newestScore {
-	font-size: 4rem;
-    font-weight: 800;
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin: 1rem 0;
 }
 
-#renderNewScore {
-	display: none;
+.info {
+	text-align: left;
+	padding: 1rem 0;
+	border-top: 2px solid #ACD8CB;
 }
 
 button {
@@ -72,13 +71,4 @@ button {
     font: 700 18px sans-serif;
     color: #fff;
     text-shadow: 1px 1px #07a;
-}
-
-@media only screen 
-  and (min-device-width: 20em) 
-  and (max-device-width: 50px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-	.header-logo {
-	    width: 30%;
-	}
 }
