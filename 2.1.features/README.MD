@@ -99,6 +99,19 @@ Bron:
 - https://codepen.io/jeremychurch/pen/xkrgq
 
 ### Feature 5 - JS | ES6 
+
+Om te checken of ES6 feature(s) ondersteund worden.
+
+```
+function check() {
+    if (typeof SpecialObject == "undefined") return false;
+    try { specialFunction(); }
+    catch (e) { return false; }
+
+    return true;
+}
+```
+
 ![alt text](readme_images/f5.png)
 
 Bronnen:

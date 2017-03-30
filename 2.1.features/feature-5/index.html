@@ -21,8 +21,8 @@
 
         if (typeof Symbol == "undefined") return false;
 
+        // test if ES6 classes available
         try {
-
             eval("class Foo {}");
             eval("var bar = (x) => x+1");
 
@@ -34,14 +34,14 @@
 
     if (checkES()) {
 
-        // The engine supports ES6 features you want to use
+        // Browser support these ES6 features
         var script = document.createElement('script');
         script.src = "script-es6.js";
         document.head.appendChild(script);
 
 
     } else {
-        // The engine doesn't support those ES6 features
+        // Browser doesn't support those ES6 features
         // Use the boring ES5 :(
         document.write('only es5 available');
     }
