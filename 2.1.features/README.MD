@@ -90,7 +90,13 @@ Als het video element niet gesupport word dan word er een afbeelding getoond als
 
 ### Feature 4 - SVG
 
+SVG word door alle browsers ondersteund. Behalve IE8. Daarom maak ik gebruik van een
+[Conditional tags](http://www.quirksmode.org/css/condcom.html) om een png fallback te tonen als svg niet gesupport word.
 
+Bron: 
+
+- http://www.quirksmode.org/css/condcom.html
+- https://codepen.io/jeremychurch/pen/xkrgq
 
 ### Feature 5 - JS | ES6 
 ![alt text](readme_images/f5.png)
@@ -108,7 +114,6 @@ Bronnen:
 [LocalStorage]() word best goed gesupport. Maar niet door Opera Mini. 
  
  Op het moment als LocalStorage niet beschikbaar is word de input van de gebruiker in een array opgeslagen.
- Dit zou een goeie fallback kunnen zijn voor een SPA. 
  
 
 
