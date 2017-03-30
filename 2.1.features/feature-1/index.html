@@ -12,23 +12,32 @@
         blockquote {
             font-style: italic;
             font-size: 2rem;
-            width: 20em;
+            width: 80;
             border-left: 2px solid pink;
-            padding: 3rem 0;
+            padding: 10px 0;
             background-color: green;
+
             hanging-punctuation: first;
         }
 
-        @supports not (hanging-punctuation: first) {
 
-            blockquote {
+        /*@supports not (hanging-punctuation: first) {*/
 
-                background-color: red;
-            }
+            /*blockquote {*/
 
-            blockquote::first-letter {
-                margin-left: -1rem;
-            }
+                /*background-color: red;*/
+            /*}*/
+
+            /*blockquote::first-letter {*/
+                /*margin-left: -1rem;*/
+            /*}*/
+
+        /*}*/
+
+        .no-punctuation:before {
+            content: '“';
+            position: absolute;
+            margin-left: -1rem;
         }
 
     </style>
@@ -37,5 +46,21 @@
 
 <blockquote>“Et harum quidem rerum facilis est et expedita distinctio.”</blockquote>
 
+<script>
+
+    if(!('hanging-punctuation' in document.body.style)) {
+
+        var blockquote = document.querySelector('blockquote');
+        var str = document.querySelector('blockquote').innerHTML;
+
+        if (str.substring(0, 1) == '“') {
+            str = str.substring(1);
+            blockquote.innerHTML = str;
+            blockquote.classList.add('no-punctuation');
+        }
+
+    }
+
+</script>
 </body>
 </html>

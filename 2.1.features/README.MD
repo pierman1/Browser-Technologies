@@ -9,7 +9,7 @@
   CSS [Hanging-punctuation](https://css-tricks.com/almanac/properties/h/hanging-punctuation/)
   is bedoeld om web designers preciezere controle te geven over de typografie op het web.
   
-  Met hanging punctuation zet je een letter(s) buiten hun text element, waardoor de text meer doorloopt.
+  Met hanging punctuation zet je letter(s) buiten hun text element, waardoor de text meer doorloopt.
    
   ```
   blockquote {
@@ -29,6 +29,8 @@
   ```   
   
   Als de feature niet beschikbaar is krijgt de eerste letter van het ``<p>`` element een margin-left van -1em. Waardoor de eerste letter ``1rem`` naar link verschuift. 
+  
+  Edit: omdat dit niet gedoen
   
   Bron: https://css-tricks.com/almanac/properties/h/hanging-punctuation/
   
@@ -92,7 +94,6 @@ Als het video element niet gesupport word dan word er een afbeelding getoond als
 
 ### Feature 5 - JS | ES6 
 ![alt text](readme_images/f5.png)
-
 
 Bronnen:
 - http://stackoverflow.com/questions/29046635/javascript-es6-cross-browser-detection
