@@ -80,7 +80,7 @@
 
 Op IE9 word de fallback afbeelding (svg) getoond, zie hieronder:
 
-### Feature - 3 Video
+### Feature - HTML | 3 Video
 
 ![alt text](readme_images/f3.png)
 
@@ -88,7 +88,7 @@ Als het video element niet gesupport word dan word er een afbeelding getoond als
 
 ![alt text](readme_images/f3-opera.png)
 
-### Feature 4 - SVG
+### Feature 4 - HTML | SVG
 
 SVG word door alle browsers ondersteund. Behalve IE8. Daarom maak ik gebruik van een
 [Conditional tags](http://www.quirksmode.org/css/condcom.html) om een png fallback te tonen als svg niet gesupport word.
